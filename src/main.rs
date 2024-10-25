@@ -5,7 +5,7 @@ use humantime::Duration;
 use num::FromPrimitive;
 use num_derive::FromPrimitive;
 use serde::Serialize;
-use strum::{EnumString, EnumVariantNames, VariantNames};
+use strum::{EnumString, VariantNames};
 use textwrap::Options;
 use tokio::select;
 use tokio_stream::StreamExt;
@@ -74,7 +74,7 @@ struct WaybarOutput {
     Ord,
     FromPrimitive,
     EnumString,
-    EnumVariantNames,
+    VariantNames,
 )]
 #[strum(serialize_all = "kebab-case")]
 enum DeviceKind {
